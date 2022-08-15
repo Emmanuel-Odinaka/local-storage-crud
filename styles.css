@@ -1,0 +1,85 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --mainColor: #9c69e2;
+  --lightBg: #ffffff;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+.center-text {
+  text-align: center;
+  color: var(--mainColor);
+  margin: 10px;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 25px auto;
+  font: 0.9rem;
+  min-width: 400px;
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+}
+table thead tr {
+  background-color: var(--mainColor);
+  color: var(--lightBg);
+  text-align: left;
+  font-weight: bold;
+}
+table th,
+table td {
+  padding: 12px 15px;
+}
+table tbody tr {
+  border-bottom: 2px solid rgba(228, 223, 223, 0.589);
+}
+table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+table tbody tr:last-of-type {
+  border-bottom: 2px solid var(--mainColor);
+}
+.content-form {
+  max-width: 400px;
+  margin: 25px auto;
+  padding: 2rem;
+  border: 2px solid var(--mainColor);
+  border-radius: 0.3rem;
+}
+.content-form label {
+  display: block;
+  text-transform: uppercase;
+  margin: 0.5rem 0 0.2rem;
+  font-size: 14px;
+}
+.content-form input,
+select {
+  display: block;
+  width: 100%;
+  border: 2px solid var(--mainColor);
+  padding: 0.5rem;
+}
+#submit-btn {
+  border: 0;
+  background-color: var(--mainColor);
+  padding: 0.5rem;
+  color: var(--lightBg);
+  margin: 1rem 0;
+  cursor: pointer;
+  width: auto;
+  text-transform: uppercase;
+  border-radius: 0.3rem;
+  transition: all 0.2s ease-in-out;
+}
+#submit-btn:hover {
+  background-color: var(--lightBg);
+  color: var(--mainColor);
+  border: 2px solid var(--mainColor);
+}

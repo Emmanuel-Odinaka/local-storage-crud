@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body id="body">
+    <h1 class="center-text">CRUD App using Local Storage</h1>
+    <form action="" onsubmit="addContent(event)" class="content-form">
+      <label class="label" for="name">Name</label
+      ><input type="text" name="name" id="name" />
+      <label class="label" for="email">Email</label
+      ><input type="text" name="email" id="email" />
+      <label class="label" for="track">Track</label
+      ><input type="text" name="track" id="track" />
+
+      <label for="team">isTeamLead?</label>
+      <select name="team" id="team">
+        <option value="True">True</option>
+        <option value="False">False</option>
+      </select>
+      <label for="suspend">isSuspended?</label>
+      <select name="suspend" id="suspend">
+        <option value="True">True</option>
+        <option value="False">False</option>
+      </select>
+      <label for="expelled">isExpelled?</label>
+      <select name="expelled" id="expelled">
+        <option value="True">True</option>
+        <option value="False">False</option>
+      </select>
+
+      <input type="submit" value="Add User" id="submit-btn" />
+    </form>
+    <script src="./script.js"></script>
+  </body>
+</html>
